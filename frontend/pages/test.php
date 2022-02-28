@@ -1,6 +1,10 @@
 <?php
- $bla = password_hash("KoekjesZijnGemaaktVanDeeg", PASSWORD_DEFAULT);
-echo $bla;
-var_dump(password_verify("KoekjesZijnGemaaktVanDeeg", $bla));
-echo"sdtgr";
+
+public function stripUrlPath($url){
+    $urlParts = parse_url($url);
+    $newUrl = $urlParts['scheme'] . "://" . $urlParts['host'] . "/";
+    return $newUrl;
+}
+
+var_dump($_SERVER['HTTP_HOST']);
 ?>
