@@ -1,9 +1,9 @@
 <?php
 session_start();
 if(isset($_COOKIE['Language'])){
-  REQUIRE_ONCE('../language/'.$_COOKIE['Language'].'/Global.php');
+  REQUIRE_ONCE('../../language/'.$_COOKIE['Language'].'/Global.php');
 }else{
-  REQUIRE_ONCE('../language/ENG/Global.php');
+  REQUIRE_ONCE('../../language/ENG/Global.php');
 }
 ?>
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ if(isset($_COOKIE['Language'])){
 
 					success: function(data, textStatus, jqXHR) {
 						if(data.response == 'Logged in'){
-							window.location.href = 'home.php';
+							window.location.href = '../home.php';
 						}else{
 							alert(Messages[1]);
 						}

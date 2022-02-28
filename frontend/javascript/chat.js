@@ -23,6 +23,7 @@ function GetMessages(TID){
     var url = "https://iabamun.nl/game/lab-andre/api/index.php/chat/" + $(TID).attr("data-chat");
     $.get(url, {},
     function(data){
+        console.log(data);
         var HTML = "";
         
         for(i in data["response"]){
