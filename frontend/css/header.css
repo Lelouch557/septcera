@@ -1,0 +1,46 @@
+body{
+    margin:0px;
+    background-color: #ffc9a9;
+}
+.iconsA{
+    height:31px;
+}
+.LeftIcons{
+    height: 31px;
+    display: flex;
+    margin:auto;
+}
+.LeftIcons div{
+    height:30px;
+    width:33.3%;
+}
+.iconsA img{
+    height:100%;
+}
+#Links{
+    height: 31px;
+    width:100%;
+    background-color: yellow;
+    z-index: 500;
+    position: fixed;
+    top:0px;
+    border-bottom: 1px solid black;
+    display:flex;
+    text-align:center;
+}
+#points{
+    width: 100%;
+    position: fixed;
+    z-index: 501;
+    display:flex;
+    text-align:center;
+}
+#points div{
+    width:33.3%;
+    height:10px
+}
+#points img{
+    width:100px;
+    height:100%;
+    margin:auto;
+}

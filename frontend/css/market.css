@@ -1,0 +1,22 @@
+#orders_div{
+    margin: auto;
+    position: relative;
+    width: fit-content;
+    top: 100px;
+    background-color: antiquewhite;
+}
+table {
+    border-spacing: 0;
+}
+table tbody tr:nth-child(even){
+    background-color: #e5e5e5;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #bdbdbd;
+}
+#values_div{
+    width: fit-content;
+    margin: auto;
+    margin-top: 128px;
+}
